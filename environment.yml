@@ -1,0 +1,23 @@
+name: dask_jobqueue_workshop
+channels:
+  - conda-forge
+dependencies:
+  - python=3
+  - bokeh
+  - dask
+  - dask-jobqueue
+  - distributed
+  - git
+  - git-lfs
+  - hdf5
+  - ipykernel
+  - matplotlib
+  - netCDF4
+  - numba
+  - numpy
+  - pandas
+  - pip
+  - seaborn
+  - tornado
+  - xarray
+  - zarr

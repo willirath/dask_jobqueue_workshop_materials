@@ -5,7 +5,6 @@ dependencies:
   - python=3
   - bokeh
   - dask
-  - dask-jobqueue
   - distributed
   - git
   - git-lfs
@@ -21,3 +20,5 @@ dependencies:
   - tornado
   - xarray
   - zarr
+  - pip:
+    - git+https://github.com/dask/dask-jobqueue@9c3371d17d943dd44103225c814b8ee042513a93

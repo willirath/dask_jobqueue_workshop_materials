@@ -1,6 +1,6 @@
 #!/bin/bash
 
 sudo /usr/local/bin/docker-entrypoint.sh
-sudo chown jovian:jovian ${HOME}/*ipynb
+sudo chown ${USER}:${USER} ${HOME}/*ipynb
 
 exec "$@"

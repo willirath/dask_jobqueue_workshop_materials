@@ -10,8 +10,7 @@ ENV PATH /opt/anaconda/bin:$PATH
 
 RUN conda install --yes -c conda-forge python=3.6 dask distributed dask-jobqueue docrep jupyterlab ipywidgets
 
-COPY binder/my-docker-entrypoint.sh /usr/local/bin/my-docker-entrypoint.sh
-ENTRYPOINT ["/usr/local/bin/my-docker-entrypoint.sh"]
+COPY binder/slurm.conf /etc/slurm/slurm.conf
 
 # create user with a home directory
 ARG NB_USER
@@ -29,4 +28,4 @@ RUN echo '%wheel ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 WORKDIR ${HOME}
 USER ${NB_USER}
 
-COPY _binder_notebooks/*.ipynb ${HOME}/ 
+COPY _binder_notebooks/*.ipynb ${HOME}/

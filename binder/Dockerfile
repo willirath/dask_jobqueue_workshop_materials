@@ -32,3 +32,4 @@ WORKDIR ${HOME}
 USER ${NB_USER}
 
 COPY _binder_notebooks/*.ipynb ${HOME}/
+RUN chown -R ${NB_USER}:${NB_USER} ${HOME}

@@ -34,6 +34,9 @@ Depending on what type of a learner you are, you might want to learn more about 
 
 - [10_scale_out_with_numba.ipynb](notebooks/10_scale_out_with_numba.ipynb)
   : An example of scaling out JIT compiled code with Numba. _(WIP)_
+  
+- [99_Outlook.ipynb](notebooks/99_Outlook.ipynb)
+  : An outlook on things not covered in this workshop and on possible future additions to Dask and Dask-Jobqueue.
 
 
 ## Setup and Requirements

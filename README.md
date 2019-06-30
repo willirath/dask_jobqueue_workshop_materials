@@ -32,7 +32,7 @@ Depending on what type of a learner you are, you might want to learn more about 
 - [05_cluster_size_and_distributed_IO.ipynb](notebooks/05_cluster_size_and_distributed_IO.ipynb)
   : An example with Dask clusters spanning different numbers of HPC cluster nodes that shows how IO bandwidth in a distributed file system increases with cluster size.
 
-- [99_scale_out_with_numba.ipynb](notebooks/99_scale_out_with_numba.ipynb)
+- [10_scale_out_with_numba.ipynb](notebooks/10_scale_out_with_numba.ipynb)
   : An example of scaling out JIT compiled code with Numba. _(WIP)_
 
 

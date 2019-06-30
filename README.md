@@ -3,15 +3,37 @@
 Dask Jobqueue Docs: <https://jobqueue.dask.org>
 
 
+## Requirements
+
+Depending on what type of a learner you are, you might want to learn more about Dask itself before diving in here.  The <https://examples.dask.org> website and especially [this binder with all the examplpes to be run interactively](https://mybinder.org/v2/gh/dask/dask-examples/master?urlpath=lab) are a great place to start.
+
+
 ## Topics covered in the course
 
-_(This list is WIP and hence likely subject to substantial changes.)_
 
-- brief overview of different ways of deploying a Dask cluster on HPC systems
-- adaptive clusters, and hints for how to choose proper cluster sizes for
-  different workloads
-- cluster size and IO
-- resilience against losing part of the cluster
+- [00_A_brief_tour_of_the_docs.ipynb](notebooks/00_A_brief_tour_of_the_docs.ipynb)
+  : A brief overview of the Dask-Jobqueue docs and of other relevant places to get help from.
+  
+
+- [01_local_cluster_monte_carlo_estimate_of_pi.ipynb](notebooks/01_local_cluster_monte_carlo_estimate_of_pi.ipynb)
+  : A short recap of `LocalCluster`s that runs a Monte Carlo estimate of the number pi [that is explained here](https://en.wikipedia.org/wiki/Pi#Monte_Carlo_methods).
+  
+  
+- [02_slurm_cluster_monte_carlo_estimate_of_pi.ipynb](notebooks/02_slurm_cluster_monte_carlo_estimate_of_pi.ipynb)
+  : An intro to a basic deployment of a `SLURMCluster` that shows hot to manually scale a cluster.
+  
+
+- [03_tuning_adaptive_clusters.ipynb](notebooks/03_tuning_adaptive_clusters.ipynb)
+  : Different ways of tuning adaptive `SLURMClusters` in order for them to automatically grow / shrink depending on the work load.
+
+- [04_resilient_clusters.ipynb](notebooks/04_resilient_clusters.ipynb)
+  : An example with a fraction of the workers disapparing suddenly that shows how Dask is resilient to disappearing workers.
+
+- [05_cluster_size_and_distributed_IO.ipynb](notebooks/05_cluster_size_and_distributed_IO.ipynb)
+  : An example with Dask clusters spanning different numbers of HPC cluster nodes that shows how IO bandwidth in a distributed file system increases with cluster size.
+
+- [99_scale_out_with_numba.ipynb](notebooks/99_scale_out_with_numba.ipynb)
+  : An example of scaling out JIT compiled code with Numba. _(WIP)_
 
 
 ## Setup and Requirements
@@ -26,3 +48,4 @@ If you followed the guide above, you can set up all the dependencies by first ac
 ```bash
 conda env create -f <path-to-the-workshop-materials>/environment.yaml
 ```
+

@@ -16,13 +16,13 @@ _(This list is WIP and hence likely subject to substantial changes.)_
 
 ## Setup and Requirements
 
-This workshop uses Jupyter Notebooks for all hands-on computations. To learn how
-to set up and use a basic Python installation on HPC systems with Miniconda,
-see, e.g., here: <https://git.geomar.de/python/jupyter_on_HPC_setup_guide>
+This workshop uses Jupyter Notebooks for all hands-on computations.  To start working, please ask your cluster admins if they already offer a way of using Jupyter on their machine and what is the best way to use / install Python packages on their system.
 
-To add an environment containing all dependencies necessary to follow the
-workshop, first activate the `base` environment of your Anaconda or Miniconda
-installation and then:
+If they cannot help, you can find info on how to set up and use a basic Python installation on HPC systems with Miniconda here: <https://git.geomar.de/python/jupyter_on_HPC_setup_guide>
+
+An environment containing all dependencies necessary to follow the workshop, is defined in [environment.yaml](environment.yaml).
+
+If you followed the guide above, you can set up all the dependencies by first activating the `base` environment of your Anaconda or Miniconda  installation and then running: 
 ```bash
 conda env create -f <path-to-the-workshop-materials>/environment.yaml
 ```

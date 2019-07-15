@@ -3,6 +3,13 @@
 Dask Jobqueue Docs: <https://jobqueue.dask.org>
 
 
+## Recorded version
+
+There's a recorded version of this workshop here:
+- Part 1: <https://training.e-cam2020.eu/files/5d244ed9e4b0920ffce61cd4>
+- Part 2: <https://training.e-cam2020.eu/files/5d244edde4b0920ffce62116>
+
+
 ## Requirements
 
 Depending on what type of a learner you are, you might want to learn more about Dask itself before diving in here.  The <https://examples.dask.org> website and especially [this binder with all the examplpes to be run interactively](https://mybinder.org/v2/gh/dask/dask-examples/master?urlpath=lab) are a great place to start.
